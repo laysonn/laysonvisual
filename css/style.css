@@ -32,8 +32,10 @@ hr {
 
 .header .navbar {
     padding: 20px 100px;
-    background-color: #212121;
+    background-color: #212123;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
+
 
 .header .menu {
     display: flex;
@@ -82,6 +84,10 @@ section {
     margin-bottom: 40px;
 }
 
+.work hr {
+    padding-bottom: 15%;
+}
+
 .work .work-menu li {
     display: flex;
     margin-bottom: 30px;
@@ -111,7 +117,8 @@ section {
 }
 
 .price-title {
-    margin-top: 60px;
+    margin-top: 50px;
+    margin-bottom: 60px;
 }
 
 .port-title {
@@ -126,10 +133,49 @@ footer {
     margin: 5% 0 5%;
 }
 
+@media (max-width: 800px) {
+    .con-text {
+        text-align: center;
+     }
+     .main-menu {
+         display: flex;
+         justify-content: space-between;
+     }
+     .custom {
+         margin: 20% 0 20%;
+     }
+     .visual {
+         width: 300px;
+         margin-top: 20%;
+     }
+     .header-text {
+         padding-top: 20%;
+         padding-bottom: 20%;
+     }
+     .main-menu {
+         padding-bottom: 10%;
+     }
+     .main-menu li a {
+         font-size: 18px;
+     }
+     .navbar {
+         display: flex;
+         justify-content: center;
+     }
+     .header .menu li a {
+         margin: 20px;
+     }
+     .work hr {
+         padding-bottom: 10%;
+     }
+     .work-block {
+         text-align: center;
+     }
+}
+
 @media (max-width: 555px) {
     .con-text {
        text-align: center;
-       margin-top: 10%;
     }
     .main-menu {
         display: flex;
@@ -161,5 +207,8 @@ footer {
     }
     .header .menu li a {
         margin: 20px;
+    }
+    .work hr {
+        padding-bottom: 10%;
     }
 }
